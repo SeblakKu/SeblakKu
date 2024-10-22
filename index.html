@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seblak Ku - Rasakan Cita Rasa Pedas Terbaik</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff3e3; /* Latar belakang lembut */
+            font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+        }
+        .navbar {
+            background-color: rgba(255, 69, 0, 0.9); /* Warna navbar pedas */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            background: linear-gradient(rgba(255, 69, 0, 0.8), rgba(255, 204, 0, 0.5)), url('img/hero-background.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fire {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: url('img/fire.png') no-repeat center center/cover;
+            top: 20px;
+            left: 20px;
+            opacity: 0.8;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .hero .image-side {
+            max-width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-danger {
+            background-color: rgba(255, 69, 0, 0.9);
+            border: none;
+            font-weight: 600;
+        }
+        .contact {
+            background: linear-gradient(rgba(255, 204, 0, 0.8), rgba(255, 69, 0, 0.9));
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+        .contact h2 {
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .location {
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .map {
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.5s;
+            transform: scale(1.05); /* Efek zoom */
+        }
+        .map:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .hero-content {
+                text-align: left;
+                margin-right: 20px;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .hero p {
+                font-size: 1.5rem;
+            }
+            .hero .image-side {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seblak Ku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/6285846532964">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://maps.app.goo.gl/5VeyZQhdT5sv4Gzz9?g_st=ac">Lokasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="fire"></div>
+        <div class="hero-content">
+            <h1 class="display-4">Selamat Datang di Seblak Ku!</h1>
+            <p class="lead">Rasakan cita rasa pedas terbaik kami.</p>
+            <a href="#menu" class="btn btn-danger btn-lg">Lihat Menu</a>
+        </div>
+        <img src="img/logo.jpeg" alt="Seblak" class="image-side">
+    </header>
+
+    <div class="container my-5" id="menu">
+        <h2 class="text-center mb-4">Makanan Dan Minuman</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/seblak.jpeg" class="card-img-top img-fluid" alt="Seblak Prasmanan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Seblak Prasmanan</h5>
+                        <p class="card-text">Bisa tambahkan toping sesuai selera.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8uE85j6iWBAjMFEF-l3HXZsYqyHnRw-lejQbyCKVF1bic6w/viewform" class="btn btn-danger">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/basreng.jpeg" class="card-img-top img-fluid" alt="Aneka Cemilan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Aneka Cemilan</h5>
+                        <p class="card-text">Cemilan enak seperti basreng goreng, dll.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_KTgWfkQ713_vLaMPc4OvBLii1Yktz389lzoD4D9osBTYew/viewform" class="btn btn-danger">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/minuman.jpeg" class="card-img-top img-fluid" alt="Aneka Minuman">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Aneka Minuman</h5>
+                        <p class="card-text">Pop ice berbagai rasa, dan minuman lain.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJXJ2keM5bmM5be16CmDpiGkdxMi4FKc8bOACKIdpjbbBF6g/viewform" class="btn btn-danger">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+
+h1{
+    color: #ffffff;
+}
+
+h2 {
+    color: rgb(255, 250, 250);                          /* Warna teks */
+    font-family: 'Poppins', sans-serif;                 /* Menggunakan font Poppins */
+    font-size: 36px;                                   /* Ukuran font lebih besar */
+    font-weight: 600;                                  /* Menetapkan ketebalan font */
+    text-align: center;                                 /* Rata tengah */
+    margin: 20px 0;                                    /* Jarak atas dan bawah */
+    text-transform: uppercase;                          /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 2px;                               /* Jarak antar huruf */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);      /* Bayangan teks */
+    background: linear-gradient(135deg, rgba(255, 69, 0, 0.8), rgba(255, 204, 0, 0.5)); /* Gradien warna */
+    padding: 10px 20px;                                /* Jarak dalam elemen */
+    border-radius: 10px;                               /* Sudut membulat */
+    transition: transform 0.3s, box-shadow 0.3s;      /* Efek transisi */
+}
+
+h2:hover {
+    transform: scale(1.05);                            /* Membesarkan saat hover */
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.5);      /* Bayangan saat hover */
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
