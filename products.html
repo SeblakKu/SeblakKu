@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Seblak Ku</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff3e3;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        .category-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ff4500; /* Warna judul kategori */
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .rating {
+            color: gold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .product-container {
+            margin-bottom: 40px; /* Ruang antar kategori */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(255, 69, 0, 0.9);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Seblak Ku</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maintence.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="maintence.html">Lokasi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Menu Seblak Ku</h1>
+
+        <!-- Seblak Category -->
+        <div class="product-container">
+            <div class="category-title">Seblak</div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/seblak.jpeg" class="card-img-top" alt="Seblak Ibu Tini">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Seblak Ibu Tini</h5>
+                            <p class="card-text">Seblak lezat dengan bumbu spesial dari Ibu Tini.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <a href="seblakmmh.html" class="btn btn-danger">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/seblak.jpeg" class="card-img-top" alt="Seblak Tn. Indah">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Seblak Tn. Indah</h5>
+                            <p class="card-text">Seblak pedas dengan racikan dari Tn. Indah.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <a href="seblakmmh.html" class="btn btn-danger">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Minuman Category -->
+        <div class="product-container">
+            <div class="category-title">Minuman</div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/minuman.jpeg" class="card-img-top" alt="Minuman Ibu Tini">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Minuman Ibu Tini</h5>
+                            <p class="card-text">Minuman segar dengan rasa alami dari Ibu Tini.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <a href="seblakmmh.html" class="btn btn-danger">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/minuman.jpeg" class="card-img-top" alt="Minuman Tn. Indah">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Minuman Tn. Indah</h5>
+                            <p class="card-text">Minuman dingin dengan sentuhan unik dari Tn. Indah.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <a href="seblakmmh.html" class="btn btn-danger">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cemilan Category -->
+        <div class="product-container">
+            <div class="category-title">Cemilan</div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/basreng.jpeg" class="card-img-top" alt="Cemilan Ibu Tini">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cemilan Ibu Tini</h5>
+                            <p class="card-text">Cemilan renyah yang dibuat dengan cinta oleh Ibu Tini.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <a href="seblakmmh.html" class="btn btn-danger">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/basreng basah chili oil.jpeg" class="card-img-top" alt="Cemilan Tn. Indah">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cemilan Tn. Indah</h5>
+                            <p class="card-text">Cemilan khas dengan resep rahasia dari Tn. Indah.</p>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                            <a href="seblakmmh.html" class="btn btn-danger">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
